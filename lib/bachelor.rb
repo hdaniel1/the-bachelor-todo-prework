@@ -4,6 +4,7 @@ def get_first_name_of_season_winner(data, season)
     values.each do |values, info|
       info.each do |info, data|
         return data
+      end
     end
   end
 end
