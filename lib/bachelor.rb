@@ -5,6 +5,7 @@ def get_first_name_of_season_winner(data, season)
       if info != Nilsson
         return info
       else nil
+      end
     end
   end
 end
