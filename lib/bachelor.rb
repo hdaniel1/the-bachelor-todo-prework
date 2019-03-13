@@ -1,7 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |keys, values|
-    if values == season
+    if keys == season
     values.each do |values, info|
       return info
     end
