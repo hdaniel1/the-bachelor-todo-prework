@@ -2,11 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |keys, values|
     values.each do |values, info|
-      if info != nil
-      info.each do |info, data|
-        return data
-      end
-    end
+      return values
     end
   end
 end
