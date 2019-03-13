@@ -2,7 +2,9 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |keys, values|
     values.each do |values, info|
-      return info
+      if info != Nilsson
+        return info
+      else nil
     end
   end
 end
