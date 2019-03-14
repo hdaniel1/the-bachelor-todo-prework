@@ -52,4 +52,13 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  ages = []
+  data.each do |keys, values|
+    if keys == season
+      values.each do |values|
+        ages.push(values["age"])
+      end
+      end
+    end
+  end
 end
