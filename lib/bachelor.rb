@@ -10,7 +10,7 @@ def get_first_name_of_season_winner(data, season)
       end
     end
   end
-  name.join(" ")
+  name.join(" ").split(" ")[0]
 end
 
 def get_contestant_name(data, occupation)
@@ -23,7 +23,7 @@ def get_contestant_name(data, occupation)
       end
       end
     end
-  name.join(" ").split(" ")[0]
+  name.join(" ")
 end
 
 def count_contestants_by_hometown(data, hometown)
