@@ -15,6 +15,16 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
+  name = []
+  data.each do |keys, values|
+      values.each do |values|
+      if values["occupation"] == occupation
+        name.push(values["name"])
+      end
+      end
+    end
+  end
+  name.join(" ").split(" ")[0]
 end
 
 def count_contestants_by_hometown(data, hometown)
